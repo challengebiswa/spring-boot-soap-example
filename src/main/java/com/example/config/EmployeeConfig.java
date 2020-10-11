@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -12,8 +12,8 @@ import org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition;
 import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 
-@EnableWs
 @Configuration
+@EnableWs
 public class EmployeeConfig extends WsConfigurerAdapter{
 	
 	@Bean

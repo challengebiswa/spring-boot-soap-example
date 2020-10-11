@@ -10,10 +10,11 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-boot-soap-example</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>spring-boot-soap-example</name>
 	<description>Demo project for Spring Boot</description>
-
+	<packaging>war</packaging> 
+	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -33,6 +34,11 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+			<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -44,6 +50,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+	
 	</dependencies>
 
 	<build>
