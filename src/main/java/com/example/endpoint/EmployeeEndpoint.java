@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.endpoint;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -8,6 +8,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 import com.example.employee.EmployeeDetailsRequest;
 import com.example.employee.EmployeeDetailsResponse;
+import com.example.service.EmployeeService;
 
 @Endpoint
 public class EmployeeEndpoint {

@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ws.config.annotation.EnableWs;
 import org.springframework.ws.config.annotation.WsConfigurerAdapter;
 import org.springframework.ws.transport.http.MessageDispatcherServlet;
@@ -38,4 +39,5 @@ public class EmployeeConfig extends WsConfigurerAdapter{
 	public XsdSchema schema() {
 		return new SimpleXsdSchema(new ClassPathResource("employee.xsd"));
 	}
+	
 }
